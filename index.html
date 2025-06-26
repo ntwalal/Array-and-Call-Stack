@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Arrays and Call Stack</title>
+    </head>
+    <body>
+        <h1>Arrays in JS</h1>
+        <p id="demo"></p>
+        <hr>
+        <h1>Methods in Arrays</h1>
+        <p id="original"></p>
+        <p id="poped"></p>
+        <p id="joined"></p>
+        <hr>
+        <h1>Callstack in JS</h1>
+        <p id="demo2"></p>
+        <script>
+        //creating an Array
+        var sports=["Soccer", "Netball", "Boxing", "Rugby", "Karate"];
+        //accessing the array elements
+        document.getElementById("demo").innerHTML=sports[1];
+        //methods in array
+        var fruits=["Mango", "Strawberry", "Watermelon", "Orange", "Blueberry"];
+        document.getElementById("original").innerHTML=fruits;
+        document.getElementById("poped").innerHTML=fruits.pop();
+        document.getElementById("joined").innerHTML=fruits .join("*");
+        //callstack
+        function add(a,b){
+            return a+b
+        }
+        function average(a,b){
+            return add(a,b)/2;
+        }
+        var result=average(10,20)
+        document.getElementById("demo2").innerHTML=result;
+        </script>
+    </body>
+</html>
